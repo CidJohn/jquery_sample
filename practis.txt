@@ -1,0 +1,65 @@
+
+	const navbarData = [
+	{
+  id : 1,
+  title : 'Home',
+  Description : 'Hello World'
+  },
+  	{
+    id : 2,
+  title : 'Profile',
+  Description : 'Cidjohn S. Villanueva'
+  },
+  	{
+    id : 3,
+  title : 'Contact',
+  Description : '09353582022'
+  },
+  	{
+    id : 4,
+  title : 'About',
+  Description : "I'm Goods"
+  },
+]
+ 	
+	const home = () => {
+		const nav = navbarData[0]
+    const value = Object.values(nav)
+  	const map = value.map((item) => {
+    	return item;
+    })
+        document.getElementById("id").innerHTML = map[0];
+    document.getElementById("title").innerHTML = map[1];
+    document.getElementById("desc").innerHTML = map[2];
+  }
+ 	const profile = () => {
+  const nav = navbarData[1]
+  const value = Object.values(nav)
+  	const map = value.map((item) => {
+    	return item;
+    })
+            document.getElementById("id").innerHTML = map[0];
+    document.getElementById("title").innerHTML = map[1];
+       document.getElementById("desc").innerHTML = map[2];
+   }
+	const contact = () => {
+  const nav = navbarData[2]
+  const value = Object.values(nav)
+  	const map = value.map((item) => {
+    	return item;
+    })
+            document.getElementById("id").innerHTML = map[0];
+    document.getElementById("title").innerHTML = map[1];
+       document.getElementById("desc").innerHTML = map[2];
+   }
+	const about = () => {
+  const nav = navbarData[3]
+  const value = Object.values(nav)
+  	const map = value.map((item) => {
+    	return item;
+    })
+            document.getElementById("id").innerHTML = map[0];
+    document.getElementById("title").innerHTML = map[1];
+       document.getElementById("desc").innerHTML = map[2];
+   
+}

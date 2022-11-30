@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="frm1" action="" class=""  method="post">
+            <div class="row " style="margin-top: 100px;">
+                <div class="col-sm-6 border shadow p-2">
+                    <h3>Testing Operator</h3> 
+            <div class="col-sm-12">
+                    <label for="">first number </label> <br>
+                    <input type="number" name="number1" id="box1" class="form-control" required > 
+                    
+                </div>
+                <div class="col-sm-12">
+                    <label for="">second number </label> <br>
+                    <input type="number" name="number2" id="box2" class="form-control" required > 
+                    
+                </div>
+                <div class="col-sm-12">
+                    <label for="">Operator option:</label> 
+                    <select name="math" id="math" style="padding:2px;" class="form-select" required>
+                        <option value="">none</option>
+                        <option value="addition">add</option>
+                        <option value="multiplication">multi</option>
+                        <option value="division">divid</option>
+                        <option value="subtract">minus</option>
+                    </select> 
+                </div>
+                <div class="col-sm-12 mt-5">
+                    <input type="submit" value="Answer:" onclick="func()" class="btn btn-outline-dark">
+                    <span id="demo"  class=" border-bottom border-dark ms-3 h3"></span> 
+                </div>
+            </div>
+            <div class="col-sm-6 border shadow">
+                <h3>Personal Information</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="">First name</label>
+                        <input type="text" name="fname" id="firstname" class="form-control" required >
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="">Last name</label>
+                        <input type="text" name="lastname" id="lastname" class="form-control" required >
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="">Username</label>
+                        <input type="text" name="username" id="username" class="form-control" required minlength="2">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="">Birthday</label>
+                        <input type="date" name="date" id="date" class="form-control" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="">Gender</label>
+                        <select name="gender" id="gender" class="form-select" required>
+                            <option value="">choose</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 mt-5">
+                        <input type="submit" value="submit" class="btn btn-outline-dark" onclick="handleData()">
+                    </div>
+                </div>
+            </div>
+                </div>
+
+                <div id="table" class="mt-5 border shadow"></div>
+            </form>
+
+    </div>
+
+
+
+    
+</body>
+
+    <script src="test.js"></script>
+    <script src="jquery.js"></script>
+    <script src="addinfo.js"></script>
+    </html>
